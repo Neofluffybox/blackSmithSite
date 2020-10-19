@@ -1,0 +1,61 @@
+nav {
+    position: absolute;
+    background-color: #aaa;
+    width: 120px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+nav span{
+    font-size: 18px;
+}
+
+.getaround {
+    list-style-type: none;
+    width: 120px;
+    margin: 0;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #222;
+}
+
+.getaround li a{
+    display: block;
+    border-radius: 10px;
+    margin:10px;
+    width: 80px;
+    background-color: #ccc;
+    color: #333;
+    text-align: center;
+}
+
+.getaround li a:hover{
+    background-color: #622;
+    color: white;
+}
+
+.as img{
+    position: relative;
+    left:150px;
+    margin-bottom: 75px;
+}
+
+.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    width: 150px;
+}
+
+.gallery:hover{
+    border: 1px solid #777;
+}
+
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+}
