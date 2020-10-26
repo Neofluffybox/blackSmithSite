@@ -7,6 +7,56 @@ nav {
     float: left;
 }
 
+header{
+    background-color: #aaa;
+}
+
+body {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+@media only screen and (max-width: 1500px) {
+    article {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+    footer {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    article {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    footer {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    article {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    footer {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    article {
+        margin: 0px;
+    }
+    footer {
+        margin: 0px;
+    }
+}
+
 .getaround {
     display: inline-block;
     list-style-type: none;
@@ -35,7 +85,6 @@ form label {
     font-size: 25px;
     float: left;
     margin: 4px;
-
 }
 
 #serchn {
@@ -67,13 +116,11 @@ form label {
     color: white;
 }
 
-
-
 .gallery{
-    margin: 5px;
     border: 1px solid #ccc;
     display: inline-block;
     width: 150px;
+    margin: 5px;
 }
 
 .gallery:hover{
@@ -86,8 +133,43 @@ form label {
     height:100px;
     text-align: center;
     overflow: auto;
+    background-color: #ddd;
+    font-size: 20px;
+}
+
+.desc1{
+    padding: 15px;
+    width: 400px;
+    height:auto;
+    text-align: center;
+    overflow: auto;
+    background-color: #ddd;
+    font-size: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .container{
-    position: relative;
+    display: block;
+    float: left;
+}
+
+.bigc {
+    width: 200px;
+    height: 250px;
+    overflow: auto;
+    float: left;
+    background-color: #666;
+}
+
+.as {
+    
+}
+
+.txtbx {
+    display: inline-block;
+    background-color: #ccc;
+    width: 200px;
+    height: 250px;
+    font-size: 18px;
 }
