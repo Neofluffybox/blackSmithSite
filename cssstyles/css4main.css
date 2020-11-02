@@ -50,8 +50,9 @@ table {
 nav {
     position: relative;
     background-color: #aaa;
-    width: 100%;
+    width: 350px;
     border-radius: 10px;
+    border: 3px solid rgba(15,15,15, .6);
     text-align: center;
     float: left;
 }
@@ -61,7 +62,7 @@ header{
 }
 
 body {
-    background-color: rgba(0, 0, 0, .9)
+    background-color: rgba(50, 30, 30, .9)
 }
 
 @media only screen and (max-width: 1500px) {
@@ -106,24 +107,36 @@ body {
     }
 }
 
+article {
+    position: relative;
+}
+
+nav img {
+    width: 100%;
+}
+
 h1 img{
-    width:100%;
+    width:300px;
+}
+
+form {
+    width: 50%;
+    float: right;
 }
 
 .getaround {
     display: inline-block;
     list-style-type: none;
-    width: 100%;
+    width: 50%;
     margin: 0;
-    padding: 10px;
-    border-bottom-right-radius: 10px;
+    padding: 0px;
+    border-radius: 10px;
     background-color: #222;
 }
 
 form button {
     width: 50px;
     margin: 4px;
-    float: left;
     cursor: pointer;
     border-radius: 10px;
     background-color: #ccc;
@@ -136,29 +149,23 @@ form button:hover {
 
 form label {
     font-size: 25px;
-    float: left;
     margin: 4px;
 }
 
 #serchn {
-    width: 70%;
+    width: 140px;
     margin: 4px;
     justify-self: left;
     height: auto;
-    float: left;
     background-color: #fec;
 }
 
-.getaround li {
-    justify-self: center;
-    float: left;
-}
-
 .getaround li a{
-    display: inline-block;
+    display: block;
     border-radius: 10px;
     margin:10px;
-    width: 80px;
+    width: 100px;
+    height: 25px;
     background-color: #ccc;
     color: #333;
     text-align: center;
@@ -204,18 +211,21 @@ form label {
 
 .container{
     display: block;
-    float: left;
 }
 
 .bigc {
     width: 200px;
     height: 250px;
     overflow: auto;
-    float: left;
     background-color: #666;
 }
 
 .as {
+    
+}
+
+footer{
+    position: relative;
     
 }
 
@@ -225,4 +235,11 @@ form label {
     width: 150px;
     height: 250px;
     font-size: 18px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 3px solid #666;
+}
+
+.biggestc {
+    border: 3px solid black;
 }
