@@ -56,12 +56,12 @@ body {
     display: grid;
     justify-content: center;
     grid-template-columns: 100px auto auto auto auto 100px;
-    grid-template-rows: 100px auto 75px;
+    grid-template-rows: 100px auto 100px;
     grid-template-areas: 
         "header header header header header header"
         "naver middle middle middle middle aside"
         "footer footer footer footer footer footer";
-    background-color: #964;
+    background-color: #111;
 }
     
 header {
@@ -97,13 +97,17 @@ section {
     grid-area: middle;
 }
     section h1{
+        display: block;
+        padding: 5px;
         font-size: 20px;
         background-color: #777;
     }
     article {
         border: 5px solid violet;
     }
-        article h2{
+        article h2,h3 {
+            display: block;
+            padding: 5px;
             font-size: 20px;
             background-color: #aaa;
         }
@@ -112,6 +116,7 @@ section {
             height: 250px;
             overflow: auto;
             background-color: #666;
+            padding: 10px;
         }
         .container{
             display: grid;
@@ -132,11 +137,13 @@ section {
 aside{
     border: 5px solid orange;
     grid-area: aside;
+    background-color: #222;
 }
 
 footer{
     border: 5px solid brown;
     grid-area: footer;
+    background-color: #222;
 }
 
 @media screen and (max-width: 325px) {
