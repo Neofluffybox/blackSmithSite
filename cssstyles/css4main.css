@@ -46,98 +46,84 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 /* my css code below. reset above.*/
+
+
 body {
     border: 5px solid black;
     display: grid;
     justify-content: center;
-    grid-template-columns: 75px 75px 100px 100px 75px 75px;
-    grid-template-rows: 220px auto 100px;
+    grid-template-columns: 100px auto auto auto auto 100px;
+    grid-template-rows: 100px auto 75px;
     grid-template-areas: 
         "header header header header header header"
-        "left left middle middle right right"
+        "naver middle middle middle middle aside"
         "footer footer footer footer footer footer";
     background-color: #964;
 }
-
+    
 header {
     border: 5px solid green;
     grid-area: header;
+    background-color: #222;
+    font-size: 32px;
+    color: #eee;
 }
-
-    header img {
-        width: 100%;
-    }
 
 nav {
     border: 5px solid blue;
-    grid-area: left;
+    grid-area: naver;
+    background: #222;
 }
-
-    nav div{
-        border: 5px solid grey;
-    }
-
-    .getaround{
-        background-color: #666;
-    }
-
-    .getaround li a{
+    nav li a{
         list-style-type: none;
         display: block;
         border: 3px solid black;
         text-align: center;
         border-radius: 10px;
-        margin: 10px;
-        width: 100px;
+        margin: 5px;
+        margin-top: 20px;
+        padding-top: 5px;
+        width: 74px;
         height: 25px;
         background-color: #ccc;
         color: #222;
-    }
-
-    .getaround li a:hover{
-        background-color: silver;
-        color: #111;
-    }
-
-    nav form{
-        background-color: #666;
-        height: 110px;
-    }
-    nav form label{
-        font-size: 20px;
-        justify-self: center;
-    }
-    nav form input{
-        width: 135px;
-        margin-top: 10px;
-    }
-    nav form button{
-        margin-top: 8px;
-        width: 100px;
     }
 
 section {
     border: 5px solid red;
     grid-area: middle;
 }
-
+    section h1{
+        font-size: 20px;
+        background-color: #777;
+    }
     article {
         border: 5px solid violet;
     }
-
+        article h2{
+            font-size: 20px;
+            background-color: #aaa;
+        }
         .bigc {
             width: 100%;
             height: 250px;
             overflow: auto;
             background-color: #666;
         }
+        .container{
+            display: grid;
+            grid-template-columns: 164px 164px 164px 164px;
+            width: 164px;
+        }
         .gallery {
             border: 2px solid #aaa;
             margin: 5px;
         }
             .gallery:hover{
-                border: 2px solid #666;
+                border: 2px solid #000;
             }
         .desc{
             background-color: #aaa;
@@ -145,10 +131,43 @@ section {
 
 aside{
     border: 5px solid orange;
-    grid-area: right;
+    grid-area: aside;
 }
 
 footer{
     border: 5px solid brown;
     grid-area: footer;
+}
+
+@media screen and (max-width: 325px) {
+    body {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 100px 50px auto 100px 75px;
+        grid-template-areas:
+            "header header header header"
+            "naver naver naver naver"
+            "middle middle middle middle"
+            "aside aside aside aside"
+            "footer footer footer footer";
+    }
+    nav li a{
+        float: left;
+        width: 50px;
+        height: 20px;
+        font-size: 12px;
+        margin: 2px;
+    }
+}
+@media screen and (min-width: 900px) {
+    body {
+        grid-template-columns: 150px auto auto auto auto 150px;
+        grid-template-rows: 150px auto 110px
+    }
+
+    nav li a{
+        width: 110px;
+        height: 30px;
+        margin: 10px;
+        padding-top: 10px;
+    }
 }
