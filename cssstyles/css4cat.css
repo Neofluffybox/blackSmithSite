@@ -163,7 +163,7 @@ footer{
     background-color: #222;
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 450px) {
     body {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: 100px 50px auto 100px 75px;
